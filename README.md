@@ -1,4 +1,4 @@
-#Vs. Georgia
+# Vs. Georgia
  - Play agaisnt the funny man, Georgia in the brand new week that has 4 songs.
  - There is another tutorial song, so there are 5 songs in total! *that's crazy
  - I've procrastinated, but I've finally forced myself to make this! *after 3 months!
