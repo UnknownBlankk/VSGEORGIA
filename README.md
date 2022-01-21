@@ -1,3 +1,7 @@
+# Friday Night Funkin' VS. GEORGIA 
+A mod featuring the funny man, Georgia! 
+Play the new week against a saloon owner that doesn't want to give you sprite.
+Made on kade engine.
 
 ![Kade Engine logo](assets/preload/images/KadeEngineLogo.png)
 
