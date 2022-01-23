@@ -1,5 +1,0 @@
-idle 400 -100
-singUP 400 -100
-singRIGHT 400 -100
-singLEFT 400 -100
-singDOWN 400 -100
