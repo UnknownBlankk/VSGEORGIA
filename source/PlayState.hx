@@ -1768,7 +1768,8 @@ class PlayState extends MusicBeatState
 			ana.hit = false;
 			ana.hitJudge = "shit";
 			ana.nearestNote = [];
-			if (curSong == 'no exceptions'){
+			var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+			if (songLowercase == 'no-exceptions'){
 				health = -10;
 			}
 			else{
@@ -2567,7 +2568,8 @@ class PlayState extends MusicBeatState
 
 		if (health > 2)
 			health = 2;
-		if (curSong == 'no exceptions')
+		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+		if (songLowercase == 'no-exceptions')
 			health += 2;
 		if (healthBar.percent < 20)
 			iconP1.animation.curAnim.curFrame = 1;
@@ -3213,7 +3215,8 @@ class PlayState extends MusicBeatState
 								else
 								{
 									if (!daNote.isSustainNote)
-										if (curSong == 'no exceptions'){
+										var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+										if (songLowercase == 'no-exceptions'){
 											health = -10;
 										}
 										else{
@@ -3224,7 +3227,8 @@ class PlayState extends MusicBeatState
 										noteMiss(daNote.noteData, daNote);
 									if (daNote.isParent)
 									{
-										if (curSong == 'no exceptions'){
+										var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+										if (songLowercase == 'no-exceptions'){
 											health = -10;
 										}
 										else{
@@ -3244,7 +3248,8 @@ class PlayState extends MusicBeatState
 											&& daNote.sustainActive
 											&& daNote.spotInLine != daNote.parent.children.length)
 										{
-											if (curSong == 'no exceptions'){
+											var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+											if (songLowercase == 'no-exceptions'){
 												health = -10;
 											}
 											else{
@@ -3266,7 +3271,8 @@ class PlayState extends MusicBeatState
 							else
 							{
 								if (!daNote.isSustainNote)
-									if (curSong == 'no exceptions'){
+									var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+									if (songLowercase == 'no-exceptions'){
 										health = -10;
 									}
 									else{
@@ -3294,7 +3300,8 @@ class PlayState extends MusicBeatState
 										&& daNote.sustainActive
 										&& daNote.spotInLine != daNote.parent.children.length)
 									{
-										if (curSong == 'no exceptions'){
+										var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+										if (songLowercase == 'no-exceptions'){
 											health = -10;
 										}
 										else{
@@ -3548,8 +3555,8 @@ class PlayState extends MusicBeatState
 			totalNotesHit += wife;
 
 		var daRating = daNote.rating;
-		
-		if (curSong == 'no exceptions')
+		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+		if (songLowercase == 'no-exceptions')
 		{
 			switch (daRating)
 			{
@@ -4187,7 +4194,8 @@ class PlayState extends MusicBeatState
 
 	function noteMiss(direction:Int = 1, daNote:Note):Void
 	{
-		if (curSong == 'no exceptions')
+		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+		if (songLowercase == 'no-exceptions')
 		{
 			if (!boyfriend.stunned)
 			{
